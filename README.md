@@ -4,7 +4,7 @@ See https://github.com/microsoft/vscode-eslint/issues/850
 
 What I also noticed is that this now occurs on regular `.ts` files too!
 
-(I previously thought that only `.tsx` files were impacted - that was the case in [my turbo-schedule project](https://github.com/sarpik/turbo-schedule), but here it fails on `.ts` too.)
+(I previously thought that only `.tsx` files were impacted - that was the case in [my turbo-schedule project](https://github.com/sarpik/turbo-schedule) which uses yarn workspaces & typescript's project references, which might have something to do with the issue. Anyhow, the fact is - here it fails on both `.tsx` and `.ts`.)
 
 ### How I set this up:
 
