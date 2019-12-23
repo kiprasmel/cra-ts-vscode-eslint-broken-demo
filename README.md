@@ -1,3 +1,31 @@
+# cra-ts-vscode-eslint-broken-demo
+
+See https://github.com/microsoft/vscode-eslint/issues/850
+
+What I also noticed is that this now occurs on regular `.ts` files too!
+
+(I previously thought that only `.tsx` files were impacted - that was the case in [my turbo-schedule project](https://github.com/sarpik/turbo-schedule), but here it fails on `.ts` too.)
+
+### How I set this up:
+
+```sh
+yarn create react-app --typescript cra-ts-vscode-eslint-broken-demo
+# or:  npx create-react-app --typescript cra-ts-vscode-eslint-broken-demo
+```
+
+### Reproducing the issue
+
+```
+code cra-ts-vscode-eslint-broken-demo
+```
+
+* open, for example, [App.tsx](./src/App.tsx)
+* Format the file with vscode-eslint set as the default formatter for /tsx?/ files
+
+-> Extension 'ESLint' cannot format 'src/App.tsx'
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
